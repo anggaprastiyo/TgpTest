@@ -36,6 +36,10 @@ $ php artisan db:seed
 >  - seeding 3 data booking_statuses (Pending,Paid,Cancel)
 >  - seeding 5000 data bookings based on customer, pods and booking_statuses
 
+```sh
+$ php artisan serve
+```
+
 ## API
 
 ![enter image description here](https://user-images.githubusercontent.com/8073479/105620471-20671600-5e30-11eb-8442-8c3c502830a0.JPG)
