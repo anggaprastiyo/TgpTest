@@ -1,78 +1,37 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# The Gym Pod Simple Dashboard Apps
+a simple application project that I created in order to take a skill test to be part of the gym pod team. This application was created using [Laravel](https://laravel.com/) and [Vue.js](https://vuejs.org/)  with the following needs :
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+ 1. Login Page (with hardcoded username & password)
+ 2. Once Login, Bring admin to Home Page to display pagination bookings with (Pod Name, User Name, Phone, Status, Price, Booking Date, Booking Time)
+ 3. Add filter option to the dashboard (Status, Pod Name, Date Range)
+ 4. Details Page for individual booking, Access the booking details from the List (**I choose to display the detail page with `modal`**)
+ 
+## Apps Structure
 
-## About Laravel
+[![](https://mermaid.ink/img/eyJjb2RlIjoic2VxdWVuY2VEaWFncmFtXG5WdWUgLS0-PiBMYXJhdmVsQ29udHJvbGxlcjogdmlhIGF4aW9zIChyb3V0ZS5hcGkpXG5MYXJhdmVsQ29udHJvbGxlci0tPj5MYXJhdmVsTW9kZWw6IGVsb3F1ZW50IC8gREIgYnVpbGRlclxuTGFyYXZlbE1vZGVsLS0-PkRhdGFiYXNlOiBxdWVyeVxuRGF0YWJhc2UtLT4-TGFyYXZlbE1vZGVsOiByZXN1bHRcbkxhcmF2ZWxNb2RlbC0tPj5MYXJhdmVsQ29udHJvbGxlcjogcmVzdWx0IChhY2Nlc3NvcixtdXRhdG9yKVxuTGFyYXZlbENvbnRyb2xsZXItLT4-VnVlOiBKU09OXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiYmFzZSJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoic2VxdWVuY2VEaWFncmFtXG5WdWUgLS0-PiBMYXJhdmVsQ29udHJvbGxlcjogdmlhIGF4aW9zIChyb3V0ZS5hcGkpXG5MYXJhdmVsQ29udHJvbGxlci0tPj5MYXJhdmVsTW9kZWw6IGVsb3F1ZW50IC8gREIgYnVpbGRlclxuTGFyYXZlbE1vZGVsLS0-PkRhdGFiYXNlOiBxdWVyeVxuRGF0YWJhc2UtLT4-TGFyYXZlbE1vZGVsOiByZXN1bHRcbkxhcmF2ZWxNb2RlbC0tPj5MYXJhdmVsQ29udHJvbGxlcjogcmVzdWx0IChhY2Nlc3NvcixtdXRhdG9yKVxuTGFyYXZlbENvbnRyb2xsZXItLT4-VnVlOiBKU09OXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiYmFzZSJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+because this is a simple app, I don't separate the front end and back end into two applications, but still accommodate them in the same project but use the concept of SPA `(Single Page Application)` with `vue router`
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Installation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+    prerequisite : create an database with name "tgpdb"
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```sh
+$ git clone https://github.com/anggaprastiyo/TgpTest.git
+$ composer install
+$ npm install
+```
+```sh
+$ php artisan migrate
+```
+>  - pods
+>  - customers
+>  - booking_statuses
+>  - bookings
+```sh
+$ php artisan db:seed
+```
+>  - seeding 5 data pods 
+>  - seeding 100 data of customer
+>  - seeding 3 data booking_statuses (Pending,Paid,Cancel)
+>  - seeding 5000 data bookings based on customer, pods and booking_statuses
