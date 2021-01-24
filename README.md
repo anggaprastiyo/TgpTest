@@ -1,5 +1,5 @@
 # The Gym Pod Simple Dashboard Apps
-a simple application project that I created in order to take a skill test to be part of the gym pod team. This application was created using [Laravel](https://laravel.com/) and [Vue.js](https://vuejs.org/)  with the following needs :
+a simple application project that I created in order to take a skill test to be part of the gym pod team. This application was created using [Laravel](https://laravel.com/) and [Vue.js](https://vuejs.org/) and basic template admin [adminlte-3](https://adminlte.io/themes/v3/) with the following needs :
 
  1. Login Page (with hardcoded username & password)
  2. Once Login, Bring admin to Home Page to display pagination bookings with (Pod Name, User Name, Phone, Status, Price, Booking Date, Booking Time)
@@ -35,3 +35,6 @@ $ php artisan db:seed
 >  - seeding 100 data of customer
 >  - seeding 3 data booking_statuses (Pending,Paid,Cancel)
 >  - seeding 5000 data bookings based on customer, pods and booking_statuses
+
+## Screen Shoot
+
