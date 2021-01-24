@@ -36,5 +36,32 @@ $ php artisan db:seed
 >  - seeding 3 data booking_statuses (Pending,Paid,Cancel)
 >  - seeding 5000 data bookings based on customer, pods and booking_statuses
 
+## API
+
+![enter image description here](https://user-images.githubusercontent.com/8073479/105620471-20671600-5e30-11eb-8442-8c3c502830a0.JPG)
+
+
 ## Screen Shoot
+
+ 1. Sign In Page
+ 
+ ![enter image description here](https://user-images.githubusercontent.com/8073479/105620319-51dee200-5e2e-11eb-8651-65d6885efee7.png)
+ 
+ 2. Home Page / Booking
+ 
+ ![enter image description here](https://user-images.githubusercontent.com/8073479/105620326-6de28380-5e2e-11eb-9d68-fc95f7b0ee16.png)
+ 
+ 3. Filtering Data
+ 
+ ![enter image description here](https://user-images.githubusercontent.com/8073479/105620372-011bb900-5e2f-11eb-8f4f-56f8f5ffd03e.png)
+ 
+ 4. Data Filtered
+
+![enter image description here](https://user-images.githubusercontent.com/8073479/105620398-332d1b00-5e2f-11eb-8a65-42168a9ddebe.png)
+
+ 5. Booking Detail
+ 
+ ![enter image description here](https://user-images.githubusercontent.com/8073479/105620408-5fe13280-5e2f-11eb-9308-1a04700b8e43.png)
+
+
 
